@@ -1,0 +1,82 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/kjessup/development/TreeFrog/qBiq/qBiqSwiftCodables/Sources/SwiftCodables/SwiftCodables.swift",
+      "line": 374,
+      "symbol": "GroupAPI.UpdateRequest.groupId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kjessup/development/TreeFrog/qBiq/qBiqSwiftCodables/Sources/SwiftCodables/SwiftCodables.swift",
+      "line": 565,
+      "symbol": "Observation.Element",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kjessup/development/TreeFrog/qBiq/qBiqSwiftCodables/Sources/SwiftCodables/SwiftCodables.swift",
+      "line": 567,
+      "symbol": "Observation.Element.deviceId",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kjessup/development/TreeFrog/qBiq/qBiqSwiftCodables/Sources/SwiftCodables/SwiftCodables.swift",
+      "line": 568,
+      "symbol": "Observation.Element.firmwareVersion",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kjessup/development/TreeFrog/qBiq/qBiqSwiftCodables/Sources/SwiftCodables/SwiftCodables.swift",
+      "line": 569,
+      "symbol": "Observation.Element.batteryLevel",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kjessup/development/TreeFrog/qBiq/qBiqSwiftCodables/Sources/SwiftCodables/SwiftCodables.swift",
+      "line": 570,
+      "symbol": "Observation.Element.charging",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kjessup/development/TreeFrog/qBiq/qBiqSwiftCodables/Sources/SwiftCodables/SwiftCodables.swift",
+      "line": 571,
+      "symbol": "Observation.Element.temperature",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kjessup/development/TreeFrog/qBiq/qBiqSwiftCodables/Sources/SwiftCodables/SwiftCodables.swift",
+      "line": 572,
+      "symbol": "Observation.Element.lightLevel",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kjessup/development/TreeFrog/qBiq/qBiqSwiftCodables/Sources/SwiftCodables/SwiftCodables.swift",
+      "line": 573,
+      "symbol": "Observation.Element.relativeHumidity",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kjessup/development/TreeFrog/qBiq/qBiqSwiftCodables/Sources/SwiftCodables/SwiftCodables.swift",
+      "line": 574,
+      "symbol": "Observation.Element.relativeTemperature",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kjessup/development/TreeFrog/qBiq/qBiqSwiftCodables/Sources/SwiftCodables/SwiftCodables.swift",
+      "line": 575,
+      "symbol": "Observation.Element.acceleration",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/kjessup/development/TreeFrog/qBiq/qBiqSwiftCodables"
+}

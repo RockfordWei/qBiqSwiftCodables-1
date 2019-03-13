@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BiqObservation Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/BiqObservation" class="dashAnchor"></a>
+    <a title="BiqObservation Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../../index.html"> Docs</a> (94% documented)</p>
+        <p class="header-right"><a href="https://github.com/ubiqweus/qBiqSwiftCodables"><img src="../../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../../index.html"> Reference</a>
+        <img id="carat" src="../../img/carat.png" />
+        BiqObservation Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Enums/DeviceAPI.html">DeviceAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/DeviceAPI/GenericDeviceRequest.html">– GenericDeviceRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/DeviceAPI/ShareRequest.html">– ShareRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/DeviceAPI/ShareTokenRequest.html">– ShareTokenRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/DeviceAPI/ShareTokenResponse.html">– ShareTokenResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/DeviceAPI/UpdateRequest.html">– UpdateRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/DeviceAPI/DeviceLimit.html">– DeviceLimit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/DeviceAPI/UpdateLimitsRequest.html">– UpdateLimitsRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/DeviceAPI/ListDevicesResponseItem.html">– ListDevicesResponseItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/DeviceAPI/ObsRequest.html">– ObsRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/GroupAPI.html">GroupAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/GroupAPI/CreateRequest.html">– CreateRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/GroupAPI/DeleteRequest.html">– DeleteRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/GroupAPI/UpdateRequest.html">– UpdateRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/GroupAPI/ListDevicesRequest.html">– ListDevicesRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/GroupAPI/AddDeviceRequest.html">– AddDeviceRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/ObsDatabase.html">ObsDatabase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/ObsDatabase/BiqObservation.html">– BiqObservation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/Observation.html">Observation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/Observation/Element.html">– Element</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/TemperatureScale.html">TemperatureScale</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Extensions/BinaryFloatingPoint.html">BinaryFloatingPoint</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Protocols/IdHashable.html">IdHashable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Structs/BiqDevice.html">BiqDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BiqDeviceAccessPermission.html">BiqDeviceAccessPermission</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BiqDeviceFirmware.html">BiqDeviceFirmware</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BiqDeviceFlag.html">BiqDeviceFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BiqDeviceGroup.html">BiqDeviceGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BiqDeviceGroupMembership.html">BiqDeviceGroupMembership</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BiqDeviceLimit.html">BiqDeviceLimit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BiqDeviceLimitType.html">BiqDeviceLimitType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/BiqDevicePushLimit.html">BiqDevicePushLimit</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:13SwiftCodables9DeviceURNa">DeviceURN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:13SwiftCodables7GroupIda">GroupId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:13SwiftCodables6UserIda">UserId</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BiqObservation</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">BiqObservation</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                </div>
+              </div>
+            <p>qBiq observation database table.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV2idSivp"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV2idSivp">id</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Serial number of the observation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV8deviceIdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/deviceId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV8deviceIdSSvp">deviceId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The id of the device which made the observtion.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">deviceId</span><span class="p">:</span> <span class="kt"><a href="../../Typealiases.html#/s:13SwiftCodables9DeviceURNa">DeviceURN</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV5bixidSSvp"></a>
+                    <a name="//apple_ref/swift/Property/bixid" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV5bixidSSvp">bixid</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The id of the device which made the observation (historical).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">bixid</span><span class="p">:</span> <span class="kt"><a href="../../Typealiases.html#/s:13SwiftCodables9DeviceURNa">DeviceURN</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV7obstimeSdvp"></a>
+                    <a name="//apple_ref/swift/Property/obstime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV7obstimeSdvp">obstime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The time of the observation in milliseconds since Jan 1, 1970</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">obstime</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV14obsTimeSecondsSdvp"></a>
+                    <a name="//apple_ref/swift/Property/obsTimeSeconds" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV14obsTimeSecondsSdvp">obsTimeSeconds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The time of the observation in seconds since Jan 1, 1970
+!FIX! I don&rsquo;t know why they are stored in the db as milliseconds and as a Double</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">obsTimeSeconds</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV8chargingSivp"></a>
+                    <a name="//apple_ref/swift/Property/charging" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV8chargingSivp">charging</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>One or zero depending on if the qBiq is currently charging.
+Note that a qBiq may be plugged in but not currently charging, depending on its battery level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">charging</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV8firmwareSSvp"></a>
+                    <a name="//apple_ref/swift/Property/firmware" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV8firmwareSSvp">firmware</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The qBiq&rsquo;s EFM firmware version.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">firmware</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV12wifiFirmwareSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/wifiFirmware" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV12wifiFirmwareSSSgvp">wifiFirmware</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The qBiq&rsquo;s ESP firmware version.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">wifiFirmware</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV7batterySdvp"></a>
+                    <a name="//apple_ref/swift/Property/battery" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV7batterySdvp">battery</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The qBiq&rsquo;s current battery level in volts.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">battery</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV4tempSdvp"></a>
+                    <a name="//apple_ref/swift/Property/temp" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV4tempSdvp">temp</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The observed temperature.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">temp</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV5lightSivp"></a>
+                    <a name="//apple_ref/swift/Property/light" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV5lightSivp">light</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The observed light level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">light</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV8humiditySivp"></a>
+                    <a name="//apple_ref/swift/Property/humidity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV8humiditySivp">humidity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The observed humidity level.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">humidity</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV6accelxSivp"></a>
+                    <a name="//apple_ref/swift/Property/accelx" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV6accelxSivp">accelx</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The observed x acceleration.
+NOTE: these are soon to be obsoleted or at least radically changed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">accelx</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV6accelySivp"></a>
+                    <a name="//apple_ref/swift/Property/accely" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV6accelySivp">accely</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The observed z acceleration.
+NOTE: these are soon to be obsoleted or at least radically changed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">accely</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV6accelzSivp"></a>
+                    <a name="//apple_ref/swift/Property/accelz" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV6accelzSivp">accelz</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The observed y acceleration.
+NOTE: these are soon to be obsoleted or at least radically changed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">accelz</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftCodables11ObsDatabaseO14BiqObservationV2id8deviceId7obstime8charging8firmware12wifiFirmware7battery4temp5light8humidity6accelx6accely6accelzAESi_SSSdSiS2SS2dS5itcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(id:deviceId:obstime:charging:firmware:wifiFirmware:battery:temp:light:humidity:accelx:accely:accelz:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV2id8deviceId7obstime8charging8firmware12wifiFirmware7battery4temp5light8humidity6accelx6accely6accelzAESi_SSSdSiS2SS2dS5itcfc">init(id:deviceId:obstime:charging:firmware:wifiFirmware:battery:temp:light:humidity:accelx:accely:accelz:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize a new observation struct.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n"><a href="../../Enums/ObsDatabase/BiqObservation.html#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV2idSivp">id</a></span> <span class="nv">i</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+			<span class="n"><a href="../../Enums/ObsDatabase/BiqObservation.html#/s:13SwiftCodables11ObsDatabaseO14BiqObservationV8deviceIdSSvp">deviceId</a></span> <span class="nv">d</span><span class="p">:</span> <span class="kt"><a href="../../Typealiases.html#/s:13SwiftCodables9DeviceURNa">DeviceURN</a></span><span class="p">,</span>
+			<span class="nv">obstime</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
+			<span class="nv">charging</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+			<span class="nv">firmware</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+			<span class="nv">wifiFirmware</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+			<span class="nv">battery</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
+			<span class="nv">temp</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
+			<span class="nv">light</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+			<span class="nv">humidity</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+			<span class="nv">accelx</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+			<span class="nv">accely</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+			<span class="nv">accelz</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Ubiqweus</a>. All rights reserved. (Last updated: 2018-07-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
