@@ -695,3 +695,215 @@ public extension TemperatureScale {
 		}
 	}
 }
+
+
+/// qbiq sensor type
+public enum BiqSensorType: Int, Codable {
+	case temperature = 0
+	case humidity = 1
+	case brightness = 2
+	case movement = 3
+	case acceleration = 4
+	case battery = 5
+
+	public static let units: [String] = ["°C", "%", "%", "times", "g", "V"]
+}
+
+/// qbiq recipe item
+public struct BiqThreshold: Codable {
+	/// recipe id
+	public let uri: String
+	/// sensor type, must be unique in the same recipe
+	public let measurement: Int
+	/// lower range
+	public let low: Double
+	/// upper range
+	public let high: Double
+	/// effectiveness in this recipe
+	public var enabled: Bool
+	/// callstack order in this recipe
+	public var index: Int
+	// default constructor
+	public init(uri i: String, measurement m: BiqSensorType, low lo: Double, high hi: Double, enabled e: Bool, index inx: Int) {
+		uri = i; measurement = m.rawValue; low = lo; high = hi; enabled = e; index = inx
+	}
+}
+
+/// recipe media attachement type, such as icon, tone, animation, etc.
+public enum BiqRecipeMediaType: Int, Codable {
+	/// primary icon
+	case icon = 0
+	/// primary tone when triggered
+	case tone = 1
+	/// primary animation for future use
+	case animation = 2
+}
+
+/// recipe media attachement, such as icon, tone, animation, etc
+public struct BiqRecipeMedia: Codable {
+	/// recipe attached to
+	public let uri: String
+	/// name/title of the media, must be unique in the same recipe
+	public let title: String
+	/// MIME type string, for example, icon for `image/ico`, tone for `sound/wav` etc.
+	public let mime: String
+	/// binary data for the media
+	public let payload: Data
+	/// index type of this media, 0 for the primary logo
+	public let `type`: Int
+	/// default constructor
+	public init(uri i: String, title t: String, mime m: String, payload p: Data, `type` tp: BiqRecipeMediaType) {
+		uri = i; title = t; mime = m; payload = p; type = tp.rawValue
+	}
+}
+
+/// searchable tags
+public struct BiqRecipeTag: Codable {
+	/// recipe id
+	public let uri: String
+	/// tag string, must be unique in the same recipe
+	public let tag: String
+	public init(uri i: String, tag t: String) {
+		uri = i; tag = t
+	}
+}
+
+/// qbiq recipe
+public struct BiqRecipe: Codable{
+
+	/// recipe id
+	public let uri: String
+	/// name / title
+	public let title: String
+	/// author / brand
+	public let author: String
+	/// short introduction
+	public let description: String
+	/// default constructor
+	public init(title t: String, author a: String, description d: String) {
+		title = t; author = a; description = d
+		if let urlencoded = "\(a)-\(title)".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)?.lowercased() {
+			uri = urlencoded
+		} else {
+			uri = UUID().uuidString
+		}
+	}
+}
+
+/// the content payload of a chat log application prior to id/utc allocation
+public struct ChatLogCreation: Codable {
+	/// topic == qbiq id
+	public let topic: String
+	/// message payload
+	public let content: String
+	/// default constructor
+	public init(topic t: String, content c: String) {
+		topic = t; content = c
+	}
+}
+
+/// table chat log
+public struct ChatLog: Codable {
+	/// message id
+	public let id: Int64
+	/// timestamp
+	public let utc: String
+	/// topic => qbiq id
+	public let topic: String
+	/// sender of the message
+	public let poster: String
+	/// message payload
+	public let content: String
+	/// default constructor
+	public init(id i: Int64, utc u: String, topic t: String, poster p: String, content c: String) {
+	id = i; utc = u; topic = t; poster = p; content = c
+	}
+}
+
+/// message recipient
+public struct Recipient: Codable {
+	/// email address
+	public let email: String
+	/// mobile device token
+	public let device: String
+	/// default constructor
+	public init(email e: String, device d: String) {
+		email = e; device = d
+	}
+}
+
+
+/// History Record data control
+public struct BiqBookmark: Codable {
+	/// The permanent unique id for this qBiq device.
+	public let id: DeviceURN
+	/// The bookmark point
+	public let timestamp: Double
+	/// Init a new BiqBookmark struct.
+	public init(id i: DeviceURN, timestamp t: Double) {
+		id = i
+		timestamp = t
+	}
+}
+
+/// statistics of a qbiq
+public struct BiqStat: Codable {
+	/// how many biqs does a user have
+	public let owned: Int
+	/// how many biqs of current user are being followed
+	public let followed: Int
+	/// how many biqs are is the user following
+	public let following: Int
+	/// default constructor
+	public init(owned o: Int, followed ed: Int, following ing: Int) {
+		owned = o; followed = ed; following = ing
+	}
+}
+
+/// record of a qbiq profile
+public struct BiqProfile: Codable {
+	/// qbiq id
+	public let id: DeviceURN
+	/// profile content
+	public let description: String
+	/// default constructor
+	public init(id i: DeviceURN, description d: String) {
+		id = i; description = d
+	}
+}
+
+/// profile tag
+public struct BiqProfileTag: Codable {
+	/// qbiq id
+	public let id: DeviceURN
+	/// qbiq tag
+	public let tag: String
+	/// constructor
+	public init(id i: DeviceURN, tag t: String) {
+		id = i; tag = t
+	}
+}
+
+/// location of qbiq
+public struct BiqLocation: Codable {
+	/// qbiq id
+	public let id: DeviceURN
+	/// longitude
+	public let x: Double
+	/// latitude
+	public let y: Double
+	/// altitude
+	public let z: Double
+	public init(id i: DeviceURN, x longitude: Double, y latitude: Double, z altitude: Double) {
+		id = i; x = longitude; y = latitude; z = altitude
+	}
+}
+
+/// profile api response 
+public struct ProfileAPIResponse: Codable {
+	/// content payload
+	public let content: String
+	public init(content c: String) {
+		content = c
+	}
+}
